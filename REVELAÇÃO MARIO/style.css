@@ -1,0 +1,30 @@
+/* Registra a fonte personalizada do jogo (arquivo SuperMario256.ttf na mesma pasta) */
+@font-face {
+  font-family: "SuperMario256";     /* Nome que o JavaScript usa para chamar a fonte */
+  src: url("SuperMario256.ttf") format("truetype"); /* Arquivo da fonte */
+}
+
+/* Estilo da página inteira */
+body {
+  margin: 0;                /* Remove a margem padrão do navegador */
+  background: #1b1b2b;      /* Cor de fundo escura ao redor do jogo */
+  display: flex;            /* Usa flexbox para centralizar o conteúdo */
+  flex-direction: column;   /* Empilha os itens um embaixo do outro */
+  align-items: center;      /* Centraliza horizontalmente */
+  justify-content: center;  /* Centraliza verticalmente */
+  min-height: 100vh;        /* Ocupa a altura toda da janela */
+  font-family: Arial, sans-serif; /* Fonte do texto de ajuda */
+}
+
+/* Estilo do canvas (tela do jogo) */
+canvas {
+  border: 4px solid #000;       /* Borda preta em volta */
+  image-rendering: pixelated;   /* Mantém o visual "pixelado" dos sprites, sem borrar */
+  max-width: 100%;              /* Não deixa passar da largura da janela */
+}
+
+/* Texto de ajuda abaixo do jogo */
+.ajuda {
+  color: #ddd;       /* Cinza claro */
+  margin-top: 10px;  /* Espaço acima do texto */
+}
